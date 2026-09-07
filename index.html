@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>믿음플랫폼 12.2</title>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>믿음플랫폼 12.3</title>
 <style>
 :root{--g:#2e725b;--deep:#173d34;--mint:#e9f5ee;--gold:#c79c50;--ink:#25362f;--line:#dce8df}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;background:linear-gradient(#edf5f0,#faf8f2);color:var(--ink)}header{background:linear-gradient(135deg,#163b33,#438269);color:#fff;padding:27px 16px 58px}.head,.wrap{max-width:1120px;margin:auto}.brand{font-size:35px;font-weight:900}.wrap{margin-top:-35px;padding:0 14px 70px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 14px 35px #173b2e12;margin-bottom:14px}h2{margin:0 0 13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}button,.menu{border:0;border-radius:17px;padding:16px;font-size:17px;font-weight:800;cursor:pointer}.menu{text-align:left;background:var(--mint);color:#275d4b}.menu small{display:block;font-weight:500;color:#68776f;margin-top:5px}.primary{background:var(--g);color:#fff}.soft{background:var(--mint);color:#285e4c}.gold{background:#f6ead3;color:#77571f}.danger{background:#f7e9e8;color:#8a423c}section{display:none}section.active{display:block}.back{padding:9px 13px;font-size:14px;margin-bottom:10px}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1;min-width:105px}select,input,textarea{width:100%;padding:13px;border:2px solid var(--line);border-radius:13px;font-size:16px;background:#fff}textarea{min-height:160px;line-height:1.65}.target{font-size:21px;line-height:1.75;background:#f7faf7;border-radius:16px;padding:17px;margin:12px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{background:#f1f6f2;border-radius:15px;padding:12px;text-align:center}.stat b{display:block;font-size:22px;color:var(--g)}.progress{height:15px;background:#e6eee8;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;background:linear-gradient(90deg,#4e9277,#c8a258);width:0}.pline{display:flex;justify-content:space-between;margin:8px 0;font-weight:800}.books{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.book{background:#f2f7f3;padding:12px;border-radius:14px;cursor:pointer}.book small{display:block;color:#6d7973}.quiz button{width:100%;margin:5px 0}.notice{font-size:13px;line-height:1.6;color:#68776f}.importbox{border:2px dashed #b8cec1;background:#f8fbf9;border-radius:18px;padding:16px}.ok{color:#247050;font-weight:800}.warn{color:#9a6724;font-weight:800}
@@ -39,7 +39,7 @@
 }
 .mobileReady{background:#eef8f2;border:1px solid #cfe4d6;border-radius:16px;padding:14px;margin:0 0 14px;line-height:1.65}.mobileReady b{color:#24644f}
 </style></head><body>
-<header><div class="head"><div class="brand">🌿 믿음플랫폼 12.2</div><div>말씀 · 찬양 · 설교 · 나눔이 함께하는 GitHub Pages 웹사이트판 믿음공간</div></div></header><div class="wrap">
+<header><div class="head"><div class="brand">🌿 믿음플랫폼 12.3</div><div>말씀 · 찬양 · 설교 · 나눔이 함께하는 GitHub Pages 웹사이트판 믿음공간</div></div></header><div class="wrap">
 <section id="home" class="active">
 <div class="guide"><b>🌿 사용법은 아주 간단해요.</b><br>
 ① 말씀을 쓰고 싶으면 <b>성경타자</b><br>
@@ -336,12 +336,12 @@ function videoHtml(url,title){
  return `<div class="videoWrap"><iframe src="https://www.youtube.com/embed/${encodeURIComponent(id)}" title="${escapeHtml(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`
 }
 const DEFAULT_SB_URL="https://rceyqbtsnhhpoiyekstg.supabase.co";
-const DEFAULT_SB_KEY="sb_publishable_VpgBK8rkRAEra9153jTRIA_UetqAKvkK";
+const DEFAULT_SB_KEY="sb_publishable_VpgBK8rkRAEra9153jTRIA_UetqAKvK";
 function onlineCfg(){
- // 12.2: 공개판은 모든 기기가 같은 게시판을 사용하도록 고정합니다.
- // 모바일 localStorage에 남은 예전 URL/키 때문에 등록이 실패하는 문제를 차단합니다.
- try{localStorage.setItem("fp5_sbUrl",DEFAULT_SB_URL);localStorage.setItem("fp5_sbKey",DEFAULT_SB_KEY)}catch(e){}
- return {url:DEFAULT_SB_URL.replace(/\/$/,""),key:DEFAULT_SB_KEY}
+ // 12.3: 저장된 설정이 현재 프로젝트와 맞으면 사용하고, 아니면 공개 기본 설정으로 복구합니다.
+ let u="",k="";try{u=(localStorage.getItem("fp5_sbUrl")||"").replace(/\/$/,"");k=localStorage.getItem("fp5_sbKey")||""}catch(e){}
+ if(u!==DEFAULT_SB_URL || !k || k.includes("AKvkK")){u=DEFAULT_SB_URL;k=DEFAULT_SB_KEY;try{localStorage.setItem("fp5_sbUrl",u);localStorage.setItem("fp5_sbKey",k)}catch(e){}}
+ return {url:u,key:k}
 }
 function isOnlineReady(){let c=onlineCfg();return /^https:\/\/.+/.test(c.url)&&c.key.length>20}
 function saveOnline(){
