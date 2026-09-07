@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>믿음플랫폼 11.3</title>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>믿음플랫폼 11.4</title>
 <style>
 :root{--g:#2e725b;--deep:#173d34;--mint:#e9f5ee;--gold:#c79c50;--ink:#25362f;--line:#dce8df}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;background:linear-gradient(#edf5f0,#faf8f2);color:var(--ink)}header{background:linear-gradient(135deg,#163b33,#438269);color:#fff;padding:27px 16px 58px}.head,.wrap{max-width:1120px;margin:auto}.brand{font-size:35px;font-weight:900}.wrap{margin-top:-35px;padding:0 14px 70px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 14px 35px #173b2e12;margin-bottom:14px}h2{margin:0 0 13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}button,.menu{border:0;border-radius:17px;padding:16px;font-size:17px;font-weight:800;cursor:pointer}.menu{text-align:left;background:var(--mint);color:#275d4b}.menu small{display:block;font-weight:500;color:#68776f;margin-top:5px}.primary{background:var(--g);color:#fff}.soft{background:var(--mint);color:#285e4c}.gold{background:#f6ead3;color:#77571f}.danger{background:#f7e9e8;color:#8a423c}section{display:none}section.active{display:block}.back{padding:9px 13px;font-size:14px;margin-bottom:10px}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1;min-width:105px}select,input,textarea{width:100%;padding:13px;border:2px solid var(--line);border-radius:13px;font-size:16px;background:#fff}textarea{min-height:160px;line-height:1.65}.target{font-size:21px;line-height:1.75;background:#f7faf7;border-radius:16px;padding:17px;margin:12px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{background:#f1f6f2;border-radius:15px;padding:12px;text-align:center}.stat b{display:block;font-size:22px;color:var(--g)}.progress{height:15px;background:#e6eee8;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;background:linear-gradient(90deg,#4e9277,#c8a258);width:0}.pline{display:flex;justify-content:space-between;margin:8px 0;font-weight:800}.books{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.book{background:#f2f7f3;padding:12px;border-radius:14px;cursor:pointer}.book small{display:block;color:#6d7973}.quiz button{width:100%;margin:5px 0}.notice{font-size:13px;line-height:1.6;color:#68776f}.importbox{border:2px dashed #b8cec1;background:#f8fbf9;border-radius:18px;padding:16px}.ok{color:#247050;font-weight:800}.warn{color:#9a6724;font-weight:800}
@@ -34,7 +34,7 @@
 .onlineDot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#999;margin-right:7px}
 .onlineDot.on{background:#38a169}.setupGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}@media(max-width:650px){.setupGrid{grid-template-columns:1fr}}
 </style></head><body>
-<header><div class="head"><div class="brand">🌿 믿음플랫폼 11.3</div><div>말씀 · 찬양 · 설교 · 나눔이 함께하는 GitHub Pages 웹사이트판 믿음공간</div></div></header><div class="wrap">
+<header><div class="head"><div class="brand">🌿 믿음플랫폼 11.4</div><div>말씀 · 찬양 · 설교 · 나눔이 함께하는 GitHub Pages 웹사이트판 믿음공간</div></div></header><div class="wrap">
 <section id="home" class="active">
 <div class="guide"><b>🌿 사용법은 아주 간단해요.</b><br>
 ① 말씀을 쓰고 싶으면 <b>성경타자</b><br>
@@ -71,7 +71,7 @@
 
 <section id="community"><button class="soft back" onclick="page('home')">← 메인</button>
 <div class="card"><h2>🌿 활동광장</h2>
-<p class="notice">현재 7.0은 서버 없이 HTML 하나로 실행되므로 아래 다른 이용자 활동은 <b>화면 미리보기용 데모</b>입니다. 내 기록은 실제 이 기기에 저장됩니다. 온라인 서버를 연결하면 이 UI 그대로 실시간 랭킹·채팅으로 전환할 수 있습니다.</p>
+<p class="notice">현재 11.4는 서버 없이 HTML 하나로 실행되므로 아래 다른 이용자 활동은 <b>화면 미리보기용 데모</b>입니다. 내 기록은 실제 이 기기에 저장됩니다. 온라인 서버를 연결하면 이 UI 그대로 실시간 랭킹·채팅으로 전환할 수 있습니다.</p>
 <div class="row"><input id="nick" maxlength="12" placeholder="내 닉네임"><button class="primary" onclick="saveNick()">닉네임 저장</button></div></div>
 <div class="card"><h2>🏆 말씀생활 랭킹</h2><div id="rankList"></div></div>
 <div class="card"><h2>💚 최근 활동</h2><div id="feed"></div></div>
@@ -101,16 +101,27 @@
 
 <section id="online"><button class="soft back" onclick="page('home')">← 메인으로</button>
 <div class="card"><h2>🌐 온라인 연결</h2>
-<div class="guide"><b>쉽게 말하면:</b> 이 버전은 온라인 게시판이 기본 연결되어 있어 PC와 스마트폰에서 같은 찬양·설교 게시물을 함께 볼 수 있습니다.</div>
+<div class="guide"><b>쉽게 말하면:</b> 지금까지는 내 컴퓨터에만 저장됐어요. 여기서 무료 온라인 데이터 저장소를 한 번 연결하면, 같은 설정을 사용하는 사람들의 찬양·설교 게시물이 함께 보이게 됩니다.</div>
 <div class="onlineBox"><div><span id="onlineDot" class="onlineDot"></span><b id="onlineStatus">로컬 모드</b></div><p class="notice" id="onlineHelp">온라인 설정을 하지 않아도 기존 기능은 그대로 사용할 수 있습니다.</p></div>
 <div class="setupGrid"><input id="sbUrl" placeholder="Supabase Project URL"><input id="sbKey" placeholder="Supabase anon/public key"></div>
 <button class="primary" style="width:100%;margin-top:9px" onclick="saveOnline()">온라인 설정 저장</button>
 <button class="soft" style="width:100%;margin-top:8px" onclick="testOnline()">연결 확인</button>
 <div class="guide"><b>처음 한 번만 준비할 것</b><br>
 ① Supabase 프로젝트 만들기<br>② 아래 SQL을 SQL Editor에서 한 번 실행하기<br>③ Project URL과 anon/public key를 위에 붙여넣기<br><br>
-<code style="white-space:pre-wrap">온라인 게시판 준비가 완료되었습니다. 추가 SQL 설정은 필요하지 않습니다.</code>
+<code style="white-space:pre-wrap">create table if not exists faith_media_posts (
+ id bigint generated by default as identity primary key,
+ type text not null,
+ title text not null,
+ url text not null,
+ description text default '',
+ author text default '말씀친구',
+ created_at timestamptz default now()
+);
+alter table faith_media_posts enable row level security;
+create policy "public read media" on faith_media_posts for select using (true);
+create policy "public insert media" on faith_media_posts for insert with check (true);</code>
 </div>
-<p class="notice">현재 온라인 나눔은 가입 없는 간단한 공용 게시판 방식입니다. 정식 서비스에서는 로그인, 관리자 승인, 신고·차단, 스팸 방지를 추가하는 것이 좋습니다.</p>
+<p class="notice">이 11.4 버전은 가입 없는 간단한 공용 게시판 방식입니다. 정식 서비스에서는 로그인, 관리자 승인, 신고·차단, 스팸 방지를 추가하는 것이 좋습니다.</p>
 </div></section>
 </div>
 <script>
@@ -286,64 +297,60 @@ function videoHtml(url,title){
  if(!id)return "";
  return `<div class="videoWrap"><iframe src="https://www.youtube.com/embed/${encodeURIComponent(id)}" title="${escapeHtml(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`
 }
-const DEFAULT_SB_URL="https://rceyqbtsnhhpoiyekstg.supabase.co";
-const DEFAULT_SB_KEY="sb_publishable_VpgBK8rkRAEra9153jTRIA_UetqAKvk";
-const ONLINE_TABLE="faith_media_posts";
-function onlineCfg(){
- return {url:(localStorage.getItem("fp5_sbUrl")||DEFAULT_SB_URL).replace(/\/$/,""),key:localStorage.getItem("fp5_sbKey")||DEFAULT_SB_KEY}
-}
+function onlineCfg(){return {url:(localStorage.getItem("fp5_sbUrl")||"").replace(/\/$/,""),key:localStorage.getItem("fp5_sbKey")||""}}
 function isOnlineReady(){let c=onlineCfg();return /^https:\/\/.+/.test(c.url)&&c.key.length>20}
 function saveOnline(){
  let u=sbUrl.value.trim().replace(/\/$/,""),k=sbKey.value.trim();
- if(!u||!k)return alert("Project URL과 publishable key를 모두 입력해주세요.");
+ if(!u||!k)return alert("Project URL과 anon/public key를 모두 입력해주세요.");
  localStorage.setItem("fp5_sbUrl",u);localStorage.setItem("fp5_sbKey",k);renderOnline();alert("온라인 설정을 저장했어요.")
 }
 function renderOnline(){
  if(!document.getElementById("onlineStatus"))return;
  let c=onlineCfg();sbUrl.value=c.url;sbKey.value=c.key;
- let ok=isOnlineReady();onlineDot.className="onlineDot"+(ok?" on":"");onlineStatus.textContent=ok?"온라인 공유 모드":"로컬 모드";
- onlineHelp.textContent=ok?"PC와 스마트폰을 포함해 이 홈페이지를 이용하는 사람들이 같은 찬양·설교 게시판을 함께 봅니다.":"온라인 연결을 사용할 수 없습니다. 개인 기능은 그대로 작동합니다."
-}
-async function sbRequest(path,options={}){
- let c=onlineCfg();
- let headers=Object.assign({apikey:c.key,Authorization:"Bearer "+c.key},options.headers||{});
- let r=await fetch(c.url+"/rest/v1/"+path,Object.assign({},options,{headers}));
- if(!r.ok)throw new Error((await r.text())||("HTTP "+r.status));
- return r
+ let ok=isOnlineReady();onlineDot.className="onlineDot"+(ok?" on":"");onlineStatus.textContent=ok?"온라인 설정됨":"로컬 모드";
+ onlineHelp.textContent=ok?"찬양·설교 나눔 화면에서 온라인 게시물을 불러오고 등록할 수 있습니다.":"설정하지 않아도 모든 개인 기능은 그대로 작동합니다."
 }
 async function testOnline(){
- if(!isOnlineReady())return alert("온라인 설정이 없습니다.");
- try{await sbRequest(ONLINE_TABLE+"?select=id&limit=1");alert("온라인 연결이 잘 됩니다. PC와 스마트폰이 같은 게시판을 사용합니다. 🌿")}
- catch(e){console.error(e);alert("온라인 연결에 실패했습니다. 관리자에게 알려주세요.\n\n"+e.message)}
+ if(!isOnlineReady())return alert("먼저 온라인 설정을 저장해주세요.");
+ try{let c=onlineCfg(),r=await fetch(c.url+"/rest/v1/faith_media_posts?select=id&limit=1",{headers:{apikey:c.key,Authorization:"Bearer "+c.key}});if(!r.ok)throw new Error(await r.text());alert("온라인 연결이 잘 됩니다. 🌿")}
+ catch(e){alert("연결하지 못했어요. URL, 키, faith_media_posts 테이블 설정을 확인해주세요.")}
 }
-function packDescription(type,desc){return "[[FP_TYPE:"+type+"]]"+(desc||"")}
-function unpackDescription(raw){let x=String(raw||""),m=x.match(/^\[\[FP_TYPE:([^\]]+)\]\]/);return {type:m?m[1]:"설교",desc:m?x.slice(m[0].length):x}}
 async function addMedia(){
  let title=mediaTitle.value.trim(),url=safeHttpUrl(mediaUrl.value.trim()),desc=mediaDesc.value.trim();
  if(!title)return alert("제목을 적어주세요.");if(!url)return alert("올바른 인터넷 링크를 붙여넣어 주세요.");
- if(!isOnlineReady())return alert("현재 온라인 연결을 사용할 수 없습니다. 온라인 연결 화면에서 연결 확인을 해주세요.");
- let post={title,youtube_url:url,description:packDescription(mediaType.value,desc),author:myNick()};
- try{
-  await sbRequest(ONLINE_TABLE,{method:"POST",headers:{"Content-Type":"application/json",Prefer:"return=minimal"},body:JSON.stringify(post)});
-  mediaTitle.value="";mediaUrl.value="";mediaDesc.value="";await renderMedia();
-  alert("온라인 게시판에 등록했어요. PC와 스마트폰에서 함께 보입니다. 🌿")
- }catch(e){console.error(e);alert("온라인 등록에 실패했습니다. 이 기기에 따로 저장하지 않았어요.\n\n"+e.message)}
+ let base={title,author:myNick(),description:desc};
+ if(isOnlineReady()){
+  let c=onlineCfg(), variants=[
+   {...base,url,type:mediaType.value},
+   {...base,url},
+   {...base,youtube_url:url,type:mediaType.value},
+   {...base,youtube_url:url}
+  ], lastErr="";
+  for(let post of variants){
+   try{let r=await fetch(c.url+"/rest/v1/faith_media_posts",{method:"POST",headers:{apikey:c.key,Authorization:"Bearer "+c.key,"Content-Type":"application/json",Prefer:"return=minimal"},body:JSON.stringify(post)});
+    if(r.ok){mediaTitle.value="";mediaUrl.value="";mediaDesc.value="";await renderMedia();alert("모든 사용자와 공유할 온라인 게시판에 등록했어요. 🌿");return}
+    lastErr=await r.text();
+   }catch(e){lastErr=String(e)}
+  }
+  alert("온라인 등록에 실패했습니다.\n"+lastErr);return;
+ }
+ let post={type:mediaType.value,title,url,description:desc,author:myNick()};
+ let a=J("mediaPosts",[]);a.unshift({type:post.type,title:post.title,url:post.url,desc:post.description,author:post.author,date:new Date().toLocaleString("ko-KR")});SJ("mediaPosts",a.slice(0,100));mediaTitle.value="";mediaUrl.value="";mediaDesc.value="";renderMedia();alert("이 기기에 등록했어요. 🌿")
 }
-function deleteMedia(){alert("온라인 게시물 삭제는 관리자 기능을 추가한 뒤 사용할 수 있어요.")}
+function deleteMedia(i){let a=J("mediaPosts",[]);a.splice(i,1);SJ("mediaPosts",a);renderMedia()}
 async function getMediaRows(){
- if(!isOnlineReady())return [];
- try{
-  let r=await sbRequest(ONLINE_TABLE+"?select=id,title,youtube_url,description,author,created_at&order=created_at.desc&limit=100");
-  let x=await r.json();
-  return x.map(v=>{let p=unpackDescription(v.description);return {id:v.id,type:p.type,title:v.title,url:v.youtube_url,desc:p.desc,author:v.author||"말씀친구",date:v.created_at?new Date(v.created_at).toLocaleString("ko-KR"):"",online:true}})
- }catch(e){console.error(e);return []}
+ if(isOnlineReady()){
+  try{let c=onlineCfg(),r=await fetch(c.url+"/rest/v1/faith_media_posts?select=*&order=created_at.desc&limit=100",{headers:{apikey:c.key,Authorization:"Bearer "+c.key}});if(r.ok){let x=await r.json();return x.map(v=>({type:v.type||"설교",title:v.title,url:v.url||v.youtube_url||"",desc:v.description||"",author:v.author||"말씀친구",date:v.created_at?new Date(v.created_at).toLocaleString("ko-KR"):"",online:true}))}}catch(e){}
+ }
+ return J("mediaPosts",[]).map((v,i)=>({...v,_i:i,online:false}))
 }
 async function renderMedia(){
  if(!document.getElementById("mediaList"))return;
- mediaList.innerHTML='<div class="empty">온라인 게시물을 불러오는 중...</div>';
+ mediaList.innerHTML='<div class="empty">불러오는 중...</div>';
  let a=await getMediaRows(),f=mediaFilter.value,rows=a.filter(x=>f==="전체"||x.type===f);
- mediaList.innerHTML=rows.length?rows.map(x=>`<div class="mediaCard"><span class="tag">${escapeHtml(x.type)} · 온라인</span><h3>${escapeHtml(x.title)}</h3>${videoHtml(x.url,x.title)}${x.desc?`<p>${escapeHtml(x.desc)}</p>`:""}<a href="${escapeHtml(x.url)}" target="_blank" rel="noopener noreferrer">↗ YouTube/원본 링크 열기</a><p class="notice">${escapeHtml(x.author)} · ${escapeHtml(x.date||"")}</p></div>`).join(""):'<div class="empty">아직 온라인 게시물이 없어요. 첫 게시물을 등록해보세요. 🌿</div>'
+ mediaList.innerHTML=rows.length?rows.map(x=>`<div class="mediaCard"><span class="tag">${escapeHtml(x.type)}${x.online?" · 온라인":""}</span><h3>${escapeHtml(x.title)}</h3>${videoHtml(x.url,x.title)}${x.desc?`<p>${escapeHtml(x.desc)}</p>`:""}<a href="${escapeHtml(x.url)}" target="_blank" rel="noopener noreferrer">↗ 원본 링크 열기</a><p class="notice">${escapeHtml(x.author)} · ${escapeHtml(x.date||"")}</p>${x.online?"":`<button class="danger" onclick="deleteMedia(${x._i})">삭제</button>`}</div>`).join(""):'<div class="empty">아직 등록된 콘텐츠가 없어요.</div>'
 }
+
 function refresh(){let x=N("xp"),m=J("bt",{});lv.textContent=Math.floor(x/100)+1;xp.textContent=x;xpbar.style.width=(x%100)+"%";ht.textContent=N("typed");hl.textContent=N("listen");hq.textContent=N("quiz");tcount.textContent=N("typed");bookcount.textContent=m[tb?.value]||0;st.textContent=N("typed");sl.textContent=N("listen");sq.textContent=N("quiz");sx.textContent=x;let aa=attendanceData(),ss=streakCount(aa);if(document.getElementById("streakChip"))streakChip.textContent="🔥 연속출석 "+ss+"일"}
 BIBLE=FULL_BIBLE; init();
 </script></body></html>
