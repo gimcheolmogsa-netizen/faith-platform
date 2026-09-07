@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>믿음플랫폼 11.8</title>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>믿음플랫폼 12.0</title>
 <style>
 :root{--g:#2e725b;--deep:#173d34;--mint:#e9f5ee;--gold:#c79c50;--ink:#25362f;--line:#dce8df}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;background:linear-gradient(#edf5f0,#faf8f2);color:var(--ink)}header{background:linear-gradient(135deg,#163b33,#438269);color:#fff;padding:27px 16px 58px}.head,.wrap{max-width:1120px;margin:auto}.brand{font-size:35px;font-weight:900}.wrap{margin-top:-35px;padding:0 14px 70px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 14px 35px #173b2e12;margin-bottom:14px}h2{margin:0 0 13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}button,.menu{border:0;border-radius:17px;padding:16px;font-size:17px;font-weight:800;cursor:pointer}.menu{text-align:left;background:var(--mint);color:#275d4b}.menu small{display:block;font-weight:500;color:#68776f;margin-top:5px}.primary{background:var(--g);color:#fff}.soft{background:var(--mint);color:#285e4c}.gold{background:#f6ead3;color:#77571f}.danger{background:#f7e9e8;color:#8a423c}section{display:none}section.active{display:block}.back{padding:9px 13px;font-size:14px;margin-bottom:10px}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1;min-width:105px}select,input,textarea{width:100%;padding:13px;border:2px solid var(--line);border-radius:13px;font-size:16px;background:#fff}textarea{min-height:160px;line-height:1.65}.target{font-size:21px;line-height:1.75;background:#f7faf7;border-radius:16px;padding:17px;margin:12px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{background:#f1f6f2;border-radius:15px;padding:12px;text-align:center}.stat b{display:block;font-size:22px;color:var(--g)}.progress{height:15px;background:#e6eee8;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;background:linear-gradient(90deg,#4e9277,#c8a258);width:0}.pline{display:flex;justify-content:space-between;margin:8px 0;font-weight:800}.books{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.book{background:#f2f7f3;padding:12px;border-radius:14px;cursor:pointer}.book small{display:block;color:#6d7973}.quiz button{width:100%;margin:5px 0}.notice{font-size:13px;line-height:1.6;color:#68776f}.importbox{border:2px dashed #b8cec1;background:#f8fbf9;border-radius:18px;padding:16px}.ok{color:#247050;font-weight:800}.warn{color:#9a6724;font-weight:800}
@@ -33,14 +33,19 @@
 .onlineBox{background:linear-gradient(135deg,#eef8f2,#fff9ed);border:1px solid #dce9df;border-radius:18px;padding:16px;margin:12px 0}
 .onlineDot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#999;margin-right:7px}
 .onlineDot.on{background:#38a169}.setupGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}@media(max-width:650px){.setupGrid{grid-template-columns:1fr}}
+
+@media(max-width:650px){
+ body{font-size:17px}.wrap{padding:0 9px 55px}.card{padding:16px;border-radius:19px}.grid{grid-template-columns:1fr}.menu{font-size:19px;padding:18px}.menu small{font-size:14px}.brand{font-size:30px}.target{font-size:22px}.stats{grid-template-columns:repeat(2,1fr)}textarea{font-size:19px;min-height:190px}button{min-height:52px}select,input{font-size:17px}.videoWrap iframe{min-height:210px}
+}
+.mobileReady{background:#eef8f2;border:1px solid #cfe4d6;border-radius:16px;padding:14px;margin:0 0 14px;line-height:1.65}.mobileReady b{color:#24644f}
 </style></head><body>
-<header><div class="head"><div class="brand">🌿 믿음플랫폼 11.8</div><div>말씀 · 찬양 · 설교 · 나눔이 함께하는 GitHub Pages 웹사이트판 믿음공간</div></div></header><div class="wrap">
+<header><div class="head"><div class="brand">🌿 믿음플랫폼 12.0</div><div>말씀 · 찬양 · 설교 · 나눔이 함께하는 GitHub Pages 웹사이트판 믿음공간</div></div></header><div class="wrap">
 <section id="home" class="active">
 <div class="guide"><b>🌿 사용법은 아주 간단해요.</b><br>
 ① 말씀을 쓰고 싶으면 <b>성경타자</b><br>
 ② 듣고 싶으면 <b>성경낭독</b><br>
 ③ 좋은 찬양·설교를 나누고 싶으면 <b>찬양·설교 나눔</b><br>
-하고 싶은 것 하나만 골라 누르면 됩니다.</div><div class="heroMini"><span class="chip">🌿 오늘의 말씀생활</span><span class="chip" id="streakChip">🔥 연속출석 0일</span><div class="verse" id="homeVerse">말씀을 읽고, 듣고, 쓰며 오늘의 믿음 걸음을 이어가세요.</div></div><div class="card"><h2>말씀과 함께 오늘도 한 걸음</h2><div class="pline"><span>Lv. <b id="lv">1</b> · <b id="xp">0</b> XP</span><span id="dataStatus" class="ok">전권 30,929절 내장</span></div><div class="progress"><i id="xpbar"></i></div></div>
+하고 싶은 것 하나만 골라 누르면 됩니다.</div><div class="heroMini"><span class="chip">🌿 오늘의 말씀생활</span><span class="chip" id="streakChip">🔥 연속출석 0일</span><div class="verse" id="homeVerse">말씀을 읽고, 듣고, 쓰며 오늘의 믿음 걸음을 이어가세요.</div></div><div class="mobileReady" id="mobileReady"><b>📱 PC·스마트폰 사용 가능</b><br>성경타자 · 성경퀴즈 · 온라인 찬양/설교는 모바일에서도 바로 사용할 수 있습니다. 성경낭독은 Chrome·Samsung Internet에서 가장 안정적입니다.<br><button class="soft" style="width:100%;margin-top:8px" onclick="shareSite()">📤 믿음플랫폼 공유하기</button></div><div class="card"><h2>말씀과 함께 오늘도 한 걸음</h2><div class="pline"><span>Lv. <b id="lv">1</b> · <b id="xp">0</b> XP</span><span id="dataStatus" class="ok">전권 30,929절 내장</span></div><div class="progress"><i id="xpbar"></i></div></div>
 <div class="card"><div class="grid">
 <button class="menu" onclick="page('typing')">⌨️ 전권 성경타자<small>권 → 장 → 절 선택, 자동 다음 절</small></button>
 <button class="menu" onclick="page('listen')">🔊 성경 전권 연속낭독<small>절·장·권·전권 자동 이어듣기</small></button>
@@ -71,7 +76,7 @@
 
 <section id="community"><button class="soft back" onclick="page('home')">← 메인</button>
 <div class="card"><h2>🌿 활동광장</h2>
-<p class="notice">현재 11.5는 서버 없이 HTML 하나로 실행되므로 아래 다른 이용자 활동은 <b>화면 미리보기용 데모</b>입니다. 내 기록은 실제 이 기기에 저장됩니다. 온라인 서버를 연결하면 이 UI 그대로 실시간 랭킹·채팅으로 전환할 수 있습니다.</p>
+<p class="notice">현재 활동광장의 랭킹·채팅은 서버 없이 HTML 하나로 실행되므로 아래 다른 이용자 활동은 <b>화면 미리보기용 데모</b>입니다. 내 기록은 실제 이 기기에 저장됩니다. 온라인 서버를 연결하면 이 UI 그대로 실시간 랭킹·채팅으로 전환할 수 있습니다.</p>
 <div class="row"><input id="nick" maxlength="12" placeholder="내 닉네임"><button class="primary" onclick="saveNick()">닉네임 저장</button></div></div>
 <div class="card"><h2>🏆 말씀생활 랭킹</h2><div id="rankList"></div></div>
 <div class="card"><h2>💚 최근 활동</h2><div id="feed"></div></div>
@@ -187,38 +192,37 @@ function continueTyping(){
 }
 function advance(p,scope){let b=bname(p),c=el(p,"c").value,v=p==="t"?tv:lvv,a=BIBLE[b]?.[c]||[],i=+v.value;if(i<a.length-1){v.value=i+1;showV(p);return true}let ch=Object.keys(BIBLE[b]||{}).sort((a,b)=>+a-+b),ci=ch.indexOf(String(c));if(scope!=="verse"&&ci>=0&&ci<ch.length-1){el(p,"c").value=ch[ci+1];fillVs(p);return true}if(scope==="book"||scope==="all"){if(scope==="book")return false;let bi=BOOKS.findIndex(x=>x.name===b);for(let j=bi+1;j<BOOKS.length;j++)if(BIBLE[BOOKS[j].name]&&Object.keys(BIBLE[BOOKS[j].name]).length){el(p,"b").value=BOOKS[j].name;fillCh(p);return true}}return false}
 function startRead(){
- if(!("speechSynthesis" in window))return alert("이 브라우저는 음성 낭독을 지원하지 않습니다. Chrome 또는 Samsung Internet에서 열어주세요.");
+ if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined")return alert("이 브라우저는 음성 낭독을 지원하지 않습니다. Chrome 또는 Samsung Internet에서 열어주세요.");
  if(ltext.textContent.startsWith("이 부분"))return alert("본문 데이터가 없습니다.");
  const synth=window.speechSynthesis;
  synth.cancel();
- // 스마트폰에서는 버튼을 직접 누른 이 순간에 resume/speak를 호출해야 소리가 안정적으로 시작됩니다.
- try{synth.resume()}catch(_){ }
- reading=true;let scope=mode.value;
+ try{synth.resume()}catch(_){}
+ reading=true;let scope=mode.value,voiceRetry=0;
  function speakCurrent(){
   if(!reading)return;
   const text=ltext.textContent.trim();
+  const voices=synth.getVoices? synth.getVoices():[];
+  // Android Chrome에서는 음성 목록이 페이지 직후 늦게 준비될 수 있어 잠깐 기다렸다가 다시 시도합니다.
+  if(!voices.length && voiceRetry<3){voiceRetry++;setTimeout(speakCurrent,180);return}
+  voiceRetry=0;
   let u=new SpeechSynthesisUtterance(text);u.lang="ko-KR";u.rate=+rate.value;u.pitch=1;u.volume=1;
-  const voices=synth.getVoices();
   const kv=voices.find(v=>/^ko(-|_)/i.test(v.lang))||voices.find(v=>(v.lang||"").toLowerCase().includes("ko"));
   if(kv)u.voice=kv;
-  u.onerror=(e)=>{if(reading){reading=false;alert("이 브라우저에서 음성 재생이 막혔어요. 화면을 한 번 터치한 뒤 다시 ‘연속낭독’을 눌러주세요.")}};
+  let started=false;
+  u.onstart=()=>{started=true};
+  u.onerror=(e)=>{if(reading){reading=false;alert("스마트폰에서 낭독이 시작되지 않았어요. Chrome 또는 Samsung Internet으로 열고 ‘연속낭독’을 다시 눌러주세요.")}};
   u.onend=()=>{
    if(!reading)return;
    SN("listen",N("listen")+1);SJ("dayListen",{date:todayKey(),value:dayValue("dayListen")+1});addXP(3);SJ("lastListen",{book:lb.value,chapter:lc.value,verseIndex:+lvv.value});refresh();
    if(scope==="verse"){reading=false;return}
-   if(scope==="chapter"){
-    let a=BIBLE[lb.value]?.[lc.value]||[];
-    if(+lvv.value<a.length-1){lvv.value=+lvv.value+1;showV("l");setTimeout(speakCurrent,80)}else reading=false;
-    return
-   }
-   if(advance("l",scope))setTimeout(speakCurrent,80);else reading=false
+   if(scope==="chapter"){let a=BIBLE[lb.value]?.[lc.value]||[];if(+lvv.value<a.length-1){lvv.value=+lvv.value+1;showV("l");setTimeout(speakCurrent,120)}else reading=false;return}
+   if(advance("l",scope))setTimeout(speakCurrent,120);else reading=false
   };
   synth.speak(u);
-  // 일부 Android WebView에서 speak 직후 paused 상태가 되는 현상 완화
-  setTimeout(()=>{if(reading&&synth.paused)try{synth.resume()}catch(_){ }},250);
+  setTimeout(()=>{if(reading&&synth.paused)try{synth.resume()}catch(_){}},250);
+  setTimeout(()=>{if(reading&&!started&&!synth.speaking&&synth.pending===false){try{synth.resume()}catch(_){}}},700);
  }
- // 음성 목록을 먼저 깨워 모바일 브라우저 호환성 향상
- try{synth.getVoices()}catch(_){ }
+ try{synth.getVoices()}catch(_){}
  speakCurrent();
 }
 function continueRead(){
@@ -395,24 +399,47 @@ async function deleteOnlineMedia(id){
   let c=onlineCfg(),r=await fetch(c.url+"/rest/v1/faith_media_posts?id=eq."+encodeURIComponent(id),{method:"DELETE",headers:{apikey:c.key,Authorization:"Bearer "+c.key,Prefer:"return=minimal"}});
   if(!r.ok)throw new Error(await r.text());
   alert("온라인 게시물을 삭제했어요. 🌿");await renderMedia(true);
- }catch(e){alert("삭제 권한이 아직 없어요. 11.8에 함께 넣은 '온라인삭제_한번만실행.sql'을 Supabase SQL Editor에서 한 번 실행해주세요.")}
+ }catch(e){alert("삭제 권한이 아직 없어요. 11.9에 함께 넣은 '온라인삭제_한번만실행.sql'을 Supabase SQL Editor에서 한 번 실행해주세요.")}
+}
+async function fetchMediaFrom(c){
+ // 모바일/인앱 브라우저 호환성을 위해 서버 정렬과 캐시 제어 헤더를 빼고 가장 단순한 GET부터 시도합니다.
+ const paths=[
+  "/rest/v1/faith_media_posts?select=id,created_at,type,title,url,description,author&limit=100",
+  "/rest/v1/faith_media_posts?select=*&limit=100",
+  "/rest/v1/faith_media_posts?select=id,title,url,type,description,author,created_at&limit=100"
+ ];
+ let last="";
+ for(const path of paths){
+  try{
+   const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),12000);
+   const r=await fetch(c.url+path,{method:"GET",cache:"no-store",headers:{apikey:c.key,Authorization:"Bearer "+c.key,Accept:"application/json"},signal:ctl.signal});
+   clearTimeout(tm);
+   if(r.ok)return await r.json();
+   last="HTTP "+r.status+" "+await r.text();
+  }catch(e){last=String(e)}
+ }
+ throw new Error(last||"온라인 게시물을 불러오지 못했습니다.");
 }
 async function getMediaRows(force=false){
  if(isOnlineReady()){
-  try{
-   let c=onlineCfg();
-   let endpoint=c.url+"/rest/v1/faith_media_posts?select=id,created_at,type,title,url,description,author&order=created_at.desc&limit=100";
-   let r=await fetch(endpoint,{method:"GET",cache:"no-store",headers:{apikey:c.key,Authorization:"Bearer "+c.key,"Cache-Control":"no-cache","Pragma":"no-cache"}});
-   if(!r.ok)throw new Error(await r.text());
-   let x=await r.json();
-   let mapped=x.map(v=>({id:v.id,type:v.type||"설교",title:v.title||"제목 없음",url:v.url||v.youtube_url||"",desc:v.description||"",author:v.author||"말씀친구",date:v.created_at?new Date(v.created_at).toLocaleString("ko-KR"):"",online:true}));
-   // 같은 링크가 중복 등록되어도 한 번만 보여줍니다.
-   let seen=new Set();
-   return mapped.filter(v=>{let k=mediaDedupeKey(v);if(seen.has(k))return false;seen.add(k);return true});
-  }catch(e){
-   console.error("온라인 게시물 불러오기 실패",e);
-   throw e;
+  let saved=onlineCfg(), def={url:DEFAULT_SB_URL,key:DEFAULT_SB_KEY};
+  // 모바일에 예전 온라인 설정이 남아 있어도 기본 공유 게시판으로 자동 복구합니다.
+  let configs=[saved];
+  if(saved.url!==def.url||saved.key!==def.key)configs.push(def);
+  let lastErr=null;
+  for(const c of configs){
+   try{
+    let x=await fetchMediaFrom(c);
+    if(c.url===def.url&&c.key===def.key&&(saved.url!==def.url||saved.key!==def.key)){
+     localStorage.setItem("fp5_sbUrl",def.url);localStorage.setItem("fp5_sbKey",def.key);renderOnline();
+    }
+    x.sort((a,b)=>String(b.created_at||"").localeCompare(String(a.created_at||"")));
+    let mapped=x.map(v=>({id:v.id,type:v.type||"설교",title:v.title||"제목 없음",url:v.url||"",desc:v.description||"",author:v.author||"말씀친구",date:v.created_at?new Date(v.created_at).toLocaleString("ko-KR"):"",online:true}));
+    let seen=new Set();
+    return mapped.filter(v=>{let k=mediaDedupeKey(v);if(seen.has(k))return false;seen.add(k);return true});
+   }catch(e){lastErr=e;console.warn("온라인 게시판 시도 실패",e)}
   }
+  throw lastErr||new Error("온라인 게시판 연결 실패");
  }
  return J("mediaPosts",[]).map((v,i)=>({...v,_i:i,online:false}))
 }
@@ -430,6 +457,15 @@ async function renderMedia(force=false){
  }
 }
 
+function shareSite(){
+ const clean=location.origin+location.pathname+"?v=120";
+ const data={title:"믿음플랫폼",text:"성경타자·성경낭독·성경퀴즈·찬양과 설교를 함께 이용해요 🌿",url:clean};
+ if(navigator.share){navigator.share(data).catch(()=>{})}
+ else if(navigator.clipboard){navigator.clipboard.writeText(clean).then(()=>alert("믿음플랫폼 주소를 복사했어요. 카카오톡에 붙여넣어 공유해주세요. 🌿"))}
+ else prompt("이 주소를 복사해서 공유해주세요.",clean);
+}
 function refresh(){let x=N("xp"),m=J("bt",{});lv.textContent=Math.floor(x/100)+1;xp.textContent=x;xpbar.style.width=(x%100)+"%";ht.textContent=N("typed");hl.textContent=N("listen");hq.textContent=N("quiz");tcount.textContent=N("typed");bookcount.textContent=m[tb?.value]||0;st.textContent=N("typed");sl.textContent=N("listen");sq.textContent=N("quiz");sx.textContent=x;let aa=attendanceData(),ss=streakCount(aa);if(document.getElementById("streakChip"))streakChip.textContent="🔥 연속출석 "+ss+"일"}
+window.addEventListener("online",()=>{if(document.getElementById("mediaList"))renderMedia(true)});
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&document.getElementById("mediaList"))renderMedia(true)});
 BIBLE=FULL_BIBLE; init();
 </script></body></html>
