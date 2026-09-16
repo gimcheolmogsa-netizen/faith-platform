@@ -2,19 +2,43 @@
   "games": [
     {
       "date": "2026-09-16",
-      "sport": "축구",
-      "time": "20:00",
-      "opponent": "상대팀",
-      "status": "예정",
-      "watchUrl": "https://www.sbs.co.kr/"
+      "sport": "농구 남자 8강",
+      "time": "09:30",
+      "opponent": "요르단",
+      "status": "종료",
+      "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
+    },
+    {
+      "date": "2026-09-16",
+      "sport": "배구 여자 D조 예선",
+      "time": "15:45",
+      "opponent": "홍콩",
+      "status": "경기시간",
+      "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
     },
     {
       "date": "2026-09-17",
-      "sport": "배드민턴",
-      "time": "14:00",
-      "opponent": "상대팀",
+      "sport": "여자축구 조별리그 2차전",
+      "time": "16:00",
+      "opponent": "방글라데시",
       "status": "예정",
-      "watchUrl": "https://www.spotvnow.co.kr/"
+      "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
+    },
+    {
+      "date": "2026-09-21",
+      "sport": "여자축구 조별리그 3차전",
+      "time": "16:00",
+      "opponent": "북한",
+      "status": "예정",
+      "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
+    },
+    {
+      "date": "2026-09-22",
+      "sport": "남자축구 조별리그 2차전",
+      "time": "19:00",
+      "opponent": "사우디아라비아",
+      "status": "예정",
+      "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
     }
   ]
 }
