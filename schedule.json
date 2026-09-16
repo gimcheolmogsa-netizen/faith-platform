@@ -13,30 +13,30 @@
       "sport": "배구 여자 D조 예선",
       "time": "15:45",
       "opponent": "홍콩",
-      "status": "경기시간",
+      "status": "종료",
       "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
     },
     {
-      "date": "2026-09-17",
-      "sport": "여자축구 조별리그 2차전",
-      "time": "16:00",
-      "opponent": "방글라데시",
+      "date": "2026-09-18",
+      "sport": "농구 여자 C조 예선",
+      "time": "10:00",
+      "opponent": "말레이시아",
       "status": "예정",
       "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
     },
     {
       "date": "2026-09-21",
-      "sport": "여자축구 조별리그 3차전",
-      "time": "16:00",
-      "opponent": "북한",
+      "sport": "농구 여자 C조 예선",
+      "time": "13:00",
+      "opponent": "몽골",
       "status": "예정",
       "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
     },
     {
       "date": "2026-09-22",
-      "sport": "남자축구 조별리그 2차전",
-      "time": "19:00",
-      "opponent": "사우디아라비아",
+      "sport": "농구 여자 C조 예선",
+      "time": "16:00",
+      "opponent": "대만",
       "status": "예정",
       "watchUrl": "https://sports.kbs.co.kr/?section_id=10893"
     }
